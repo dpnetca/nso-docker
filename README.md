@@ -13,6 +13,8 @@ The Steps below are tested for creating and running the container on a Ubutnu ho
     * edit version number and container name as approrpirate in build.sh file and run `sh build.sh`
 6. run docker image `docker run -p 8080:8080 wanderingdrummer/nso-base:latest` again, repalce the container name with the name you used in the build
 
-Once the Docker file loads you can access the webpage from yous host machine at https://localhost:8080  default credentials are admin/admin
+Once the Docker container loads you can access the webpage from your host machine at http://localhost:8080  default credentials are admin/admin
 
 if you wish to access the console of the container, from a new terminal window run `docker ps -a` to get the container ID, now run `docker exec -it <container-id> bash` to be placed into the contaienr bash shell
+
+There are some HTML and PDF administration documents on docker container in the NSO install directory at /root/nso/doc/  to copy these to your local machine, with the docker container running, from the host machine use the command `docker cp <container-id>:/root/nso/doc .`
