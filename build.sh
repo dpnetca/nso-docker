@@ -1,7 +1,7 @@
 #!/bin/sh
 
 VER="5.1.0.1"  # Set to match your NSO version
-CONT=wanderingdrummer/nso-base # Set to match your desired container name
+CONT=dpnetca/nso-base # Set to match your desired container name
 
 # docker rmi $CONT:$VER
 docker rmi $CONT:latest
