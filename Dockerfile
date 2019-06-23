@@ -28,7 +28,7 @@ RUN mkdir ~/nso-project; \
 WORKDIR /root/nso-project
 
 # Expose ports
-EXPOSE 8080 830 2022 2023 4569
+EXPOSE 2022 2024 8080
 
 # Automatically start NSO
 ENTRYPOINT ["/root/run-nso.sh"]
